@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dev.to Post Div</title>
+
+<link rel="stylesheet" href="devtocopy.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  </head>
+
+  <body>
+<div id="footer">
+
+<!-- Question mark button in gray -->
+
+<button type="button" name="button" class="button" class="greyButton"> ? </button>
+
+<!-- preview button in gray -->
+<button type="button" name="button" class="button" class="greyButton"> Preview </button>
+
+  <!-- Button in blue to post and change background -->
+  <button type="button" name="button" id="postButton" class="button"> save changes</button>
+  <h3 class="secretText"> Changes saved...</h3>
+</div>
+
+  </body>
+</html>
+
+<script type="text/javascript">
+$("#postButton").click(function(){
+  $("#footer").css("background-color", "#40E0D0");
+$(".button").hide();
+});
+</script>
